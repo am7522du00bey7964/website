@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .box{
+        width: 1350px;
+        height: 680px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+     
+    }
+    .img{
+        width: 1350px;
+        height: 200px;
+    }
+    .text{
+        font-size: 35px;
+        position: absolute;
+        top:9px;
+        left: 110px;
+        text-shadow: 4px 4px 3px rgb(216, 215, 215);
+        color: black;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .buy{
+        font-size: 15px;
+        color: black;
+        position: absolute;
+        top:55px;
+        left: 155px;
+        background-color: transparent;
+        animation-name: slide1;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+        animation-timing-function: all ease-in-out;
+    
+    }
+    @keyframes slide1 {
+        0%{
+            top: 55px;
+            left: 155px;
+        }
+        25%{
+            top: 55px;
+            left: 155px;
+            scale: 1.0;
+            color: black;
+        }
+        50%{
+            top: 55px;
+            left: 100px;
+            scale: 0.5;
+        
+        }
+        100%{
+            top: 55px;
+            left: 100px;
+            color: transparent;
+            scale: 0.5;
+            
+        }
+    }
+    .apply{
+        font: 15px;
+        position: absolute;
+        top: 55px;
+        left: 290px;
+        color: transparent;
+        animation-name: slide2;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+        
+
+    }
+    @keyframes slide2 {
+        0%{
+            top: 55px;
+            left: 290px;
+            color: transparent;
+        }
+        25%{
+            top: 55px;
+            left: 290px;
+            color: transparent;
+            scale: 1.0;
+        }
+        50%{
+            top: 55px;
+            left: 150px;
+            color: black;
+            scale: 1.0;
+    
+        }
+        100%{
+            top: 55px;
+            left: 100px;
+            color: black;
+            scale: 0.1;
+        }
+        
+    }
+    .launched{
+        font: 12px;
+        color:transparent ;
+        background-color: transparent;
+        position: absolute;
+        top: 55px;
+        left: 355px;
+        animation-name: slide3;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+
+
+    }
+    @keyframes slide3 {
+        0%{
+            top: 55px;
+            left: 355px;
+            color: transparent;
+        }
+        50%{
+            top: 55px;
+            left: 255px;
+            color: transparent;
+            
+        }
+        100%{
+            top: 55px;
+            left: 155px;
+            color: black;
+            scale: 1.0;
+        }
+        
+    }
+    .text2{
+        position: absolute;
+        top: 90px;
+        left: 460px;
+        font-size: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bolder;
+        font-style: italic;
+        text-shadow: 3px 3px 3px rgb(245, 143, 143);
+        color: rgba(77, 75, 75, 0.986);
+    }
+    .serach{
+        width: 280px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: rgb(211, 209, 209);
+        position: absolute;
+        top: 20px;
+        left: 400px;
+        color: black;
+        font-size: medium;
+
+    }
+    .content1{
+        width: 220px;
+        height: 270px;
+        border-radius: 20px;
+        color: rgb(245, 1, 143);
+        border: 0.1rem solid;
+        box-shadow: 4px 4px 8px 2px rgba(0, 49, 49, 0.486);
+        position: absolute;
+        top: 330px;
+        left: 150px;
+    }
+    .content1::after{
+        content: "your website look like a ugly then don't take a tension just shop now and make it unique";
+        position: absolute;
+        top: 130px;
+        left: 10px;
+        color: black;
+        font-size: medium;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: lighter;
+      
+    }
+    .content1:hover{
+        scale: 1.1;
+    }
+    .img2{
+        width: 150px;
+        height: 150px;
+        background-image: url("image3.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .button1{
+        width: 85px;
+        height: 30px;
+        font-size: medium;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        color: white;
+        border-radius: 20px;
+        text-align: center;
+        background-color: black;
+        position: absolute;
+        top: 220px;
+        left: 70px;
+
+    }
+    .content2{
+        width: 220px;
+        height: 270px;
+        border-radius: 20px;
+        color: rgb(245, 1, 143);
+        border: 0.1rem solid;
+        position: absolute;
+        top: 330px;
+        left: 550px;
+        box-shadow: 4px 4px 8px 2px rgba(0, 49, 49, 0.486); 
+    }
+    .content2::after{
+        content: "are you want to create a whole website by our designer then just appoient your meeting and create ";
+        position: absolute;
+        top: 130px;
+        left: 10px;
+        color: black;
+        font-size: medium;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: lighter;
+    }
+    .content2:hover{
+        scale: 1.1;
+    }
+    .img1{
+        width: 100px;
+        height: 100px;
+        background-image: url("man2.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 20px;
+        left: 50px;
+    }
+    .button2{
+        width: 85px;
+        height: 30px;
+        font-size: medium;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        color: white;
+        border-radius: 20px;
+        text-align: center;
+        background-color: black;
+        position: absolute;
+        top: 220px;
+        left: 70px;
+
+    }
+    .content3{
+        width: 220px;
+        height: 270px;
+        border-radius: 20px;
+        color: rgb(245, 1, 143);
+        border: 0.1rem solid;
+        position: absolute;
+        top: 330px;
+        left: 950px;
+        box-shadow: 4px 4px 8px 2px  rgba(0, 49, 49, 0.486);
+
+    }
+    .content3::after{
+        content: "you have an website and you are distrube by the so much bugs and lags then just take it easy and fix a appoient";
+        position: absolute;
+        top: 120px;
+        left: 10px;
+        color: black;
+        font-size: medium;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: lighter;
+      
+    }
+    .content3:hover{
+        scale: 1.1;
+    }
+    .img3{
+        width: 100px;
+        height: 100px;
+        background-image: url("bugper.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 10px;
+        left: 40px;
+    }
+    .button3{
+        width: 85px;
+        height: 30px;
+        font-size: medium;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        color: white;
+        border-radius: 20px;
+        text-align: center;
+        background-color: black;
+        position: absolute;
+        top: 220px;
+        left: 70px;
+
+    }
+    .login{
+        width: 80px;
+        height: 25px;
+        border-radius: 20px;
+        color: rgb(248, 93, 101);
+        border: solid;
+        background-color: transparent;
+        position: absolute;
+        top: 20px;
+        left: 900px;
+    }
+    .login::after{
+        content: "login";
+        color: black;
+        font-size: medium;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+       
+        position: absolute;
+        top: 2px;
+        left: 18px;
+    }
+    .contact{
+        width: 85px;
+        height: 25px;
+        border-radius: 20px;
+        color: rgb(253, 182, 51);
+        border: solid;
+        background-color: transparent;
+        position: absolute;
+        top: 20px;
+        left: 1050px;
+    }
+    .contact::after{
+        content: "contact";
+        color: black;
+        font-size: medium;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+       
+        position: absolute;
+        top: 1px;
+        left: 16px;
+    }
+    .feedback{
+        width: 85px;
+        height: 25px;
+        border-radius: 20px;
+        color: rgb(248, 93, 101);
+        border: solid;
+        background-color: transparent;
+        position: absolute;
+        top: 20px;
+        left: 1200px;
+    }
+    .feedback::after{
+        content: "feedback";
+        color: black;
+        font-size: medium;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+       
+        position: absolute;
+        top: 1px;
+        left: 12px;
+    }
+
+</style>
+<body>
+    <div class="box">
+        <img src="perfect3.jpg">
+    </div>
+    <div class="text">
+        Web-Decor
+    </div>
+    <div class="buy">
+        JUST BUY,
+    </div>
+    <div class="apply">
+        APPLY,
+    </div>
+    <div class="launched">
+        AND LAUNCH
+    </div>
+    <div class="text2">
+        You are looking for....
+    </div>
+    <div class="serach">
+          serach here..
+    </div>
+    <div class="content1">
+        <div class="button1">shop now</div>
+        <div class="img2"></div>
+    </div>
+    <div class="content2">
+        <div class="button2">shop now</div>
+        <div class="img1"></div>
+    </div>
+    <div class="content3">
+        <div class="button3">shop now</div>
+        <div class="img3"></div>
+    </div>
+
+    <div class="login"></div>
+    <div class="contact"></div>
+    <div class="feedback"></div>
+    
+    
+</body>
+</html>
